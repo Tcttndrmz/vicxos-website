@@ -68,3 +68,28 @@ document.addEventListener('keydown', e => {
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// Vicxos brand assets
+const brandStyles = document.createElement('link');
+brandStyles.rel = 'stylesheet';
+brandStyles.href = 'brand.css';
+document.head.appendChild(brandStyles);
+
+const favicon = document.createElement('link');
+favicon.rel = 'icon';
+favicon.type = 'image/svg+xml';
+favicon.href = 'assets/vicxos-mark.svg';
+document.head.appendChild(favicon);
+
+document.querySelectorAll('.brand').forEach(brand => {
+  brand.innerHTML = '<img class="brand-logo" src="assets/vicxos-logo.svg" alt="Vicxos">';
+});
+
+const heroCopy = document.querySelector('.hero-copy');
+if(heroCopy && !heroCopy.querySelector('.hero-brand-logo')){
+  const logo = document.createElement('img');
+  logo.className = 'hero-brand-logo';
+  logo.src = 'assets/vicxos-logo.svg';
+  logo.alt = 'Vicxos — The Nexus of Future';
+  heroCopy.prepend(logo);
+}
