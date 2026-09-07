@@ -1,12 +1,47 @@
-/* Original artwork: no filters, recoloring, stretching, or generated lettering. */
+/* Original logo, black matte removed without redrawing. */
 .brand-logo{display:block;width:124px;height:auto}
-.site-header{height:100px}
-.hero-brand-logo{display:block;width:min(380px,100%);height:auto;margin:0 0 24px}
+.site-header{height:94px}
+.hero-brand-logo{display:block;width:min(290px,80%);height:auto;margin:0 0 24px}
 .footer-brand .brand-logo{width:132px}
-.device-brand-logo{display:block;width:100%;height:auto;margin:auto 0 24px;flex-shrink:0}
-@media(max-width:560px){
-  .site-header{height:86px}
-  .brand-logo{width:108px}
-  .hero{padding-top:125px}
-  .hero-brand-logo{width:min(320px,100%);margin-bottom:22px}
-}
+.hero{padding-top:142px;padding-bottom:65px;gap:44px}
+.hero h1{font-size:clamp(3rem,5.2vw,4.65rem);line-height:1.03;letter-spacing:-.06em}
+.hero .eyebrow{font-size:.78rem;margin-bottom:18px;color:#b6a7f3}
+.hero-copy>p.hero-note{font-size:.85rem;color:#a0a8bb;margin-top:22px}
+.nav-demo{font-size:.85rem;color:#d2c7ff;font-weight:600}
+.device-shell{width:min(400px,88vw);aspect-ratio:auto;transform:rotate(3deg)}
+.device-screen{min-height:600px;padding:36px 22px 24px;justify-content:flex-start;gap:14px}
+.device-brand-logo{display:block;width:150px;height:auto;align-self:center;margin:0;flex-shrink:0}
+.chat-heading{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:12px;gap:8px}
+.chat-heading strong{font-size:1rem}.chat-heading span{font-size:.75rem;color:var(--muted)}
+.chat-bubble{padding:14px 16px;border-radius:16px;font-size:.875rem;line-height:1.65}
+.chat-bubble.bot{background:#1a1e31;border:1px solid rgba(157,141,240,.14);align-self:flex-start}
+.chat-bubble.user{background:#41336e;align-self:flex-end;margin-left:22px}
+.chat-bubble p{margin:6px 0 10px;color:#bcc4d8}
+.chat-options{display:flex;gap:8px;margin-top:12px}.chat-options span{padding:5px 9px;background:rgba(142,111,245,.13);border-radius:8px;font-size:.8rem;color:#d3c6ff}
+.chat-result{color:#adc9fb;font-size:.8rem;border-top:1px solid var(--line);padding-top:9px}
+.mockup-caption{font-size:.75rem;color:#9ca3b5;text-align:center;margin:0}
+.statement{padding-top:85px;padding-bottom:70px}.statement h2,.section-head h2,.contact h2,.faq h2{font-size:clamp(2.3rem,4vw,3.7rem);line-height:1.1;letter-spacing:-.045em}
+.value-grid article{min-height:220px}.value-grid h3{margin:35px 0 8px;font-size:1.35rem}.value-grid strong{font-size:.8rem;color:#aba0d0}
+.products,.workflow,.pricing,.faq{padding-top:75px;padding-bottom:65px}
+.feature-grid,.pricing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.feature-card{padding:28px;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.025);display:flex;flex-direction:column;align-items:flex-start}
+.feature-index{font-size:.85rem;color:#b29ef2;margin-bottom:28px}
+.feature-card h3{font-size:1.25rem;line-height:1.35;margin:0}.feature-card p{font-size:1rem;line-height:1.75;color:var(--muted);margin-bottom:26px}
+.feature-tag{font-size:.8rem;color:#b3bddd;border-top:1px solid var(--line);padding-top:14px;margin-top:auto;width:100%}
+.workflow-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.workflow-list li{display:flex;gap:24px;padding:28px 0;border-top:1px solid var(--line)}.workflow-list li>span{font-size:1.4rem;color:#aa92ff;font-weight:600}
+.workflow-list h3{margin:0;font-size:1.25rem}.workflow-list p{font-size:1rem;line-height:1.7;color:var(--muted);margin-bottom:0}
+.price-card{padding:30px 26px;border:1px solid var(--line);border-radius:26px;background:rgba(255,255,255,.025);display:flex;flex-direction:column}
+.price-card.recommended{border-color:rgba(162,130,255,.6);background:linear-gradient(155deg,rgba(139,92,246,.14),rgba(255,255,255,.02))}
+.price-card .eyebrow{font-size:.85rem;color:#b5a5ec}.price-card h3{font-size:2.3rem;letter-spacing:-.04em;margin:0;line-height:1.25}
+.price-card h3 span{display:block;font-size:.875rem;font-weight:400;letter-spacing:0;color:var(--muted);margin-top:8px}
+.setup-fee{font-size:.85rem;color:#a9b0c2;margin-top:14px}
+.price-card ul{list-style:none;padding:16px 0;margin:0 0 20px;font-size:.95rem;line-height:1.65;color:#c3cadb}
+.price-card li{padding:7px 0 7px 23px;position:relative}.price-card li:before{content:'✓';position:absolute;left:0;color:#b6a0ff}.price-card .btn{margin-top:auto}
+.faq h2{margin:0 0 35px}.faq details{border-top:1px solid var(--line);padding:22px 0}.faq summary{font-size:1.1rem;cursor:pointer;line-height:1.6}.faq details p{max-width:800px;color:var(--muted);font-size:1rem;line-height:1.8;margin-bottom:0}
+.contact{padding-top:80px}.contact small{display:block;color:var(--muted);font-size:.9rem;margin-top:12px}
+section[id]{scroll-margin-top:125px}.skip-link{position:fixed;left:20px;top:-80px;z-index:100;background:#6e49cf;padding:12px 20px;border-radius:8px}.skip-link:focus{top:12px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #bea6ff;outline-offset:5px}
+@media(max-width:1050px){.desktop-nav{gap:17px}.nav-demo{display:none}.feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){.hero{padding-top:140px}.hero-visual{margin-top:0}.hero h1{font-size:clamp(3rem,7vw,4.4rem)}.hero-copy{max-width:640px}.hero-brand-logo{width:260px}.feature-grid,.pricing-grid{grid-template-columns:1fr}.workflow-list{grid-template-columns:1fr}.device-screen{min-height:570px}.price-card{padding:32px}.price-card h3 span{display:inline;margin-left:10px}.hero-visual{justify-content:center}.feature-card{padding:26px}.contact{gap:25px}}
+@media(max-width:560px){.site-header{height:84px}.brand-logo{width:108px}.hero{padding-top:116px;gap:34px}.hero-brand-logo{width:220px;margin-bottom:18px}.hero h1{font-size:clamp(2.65rem,10.5vw,3.6rem)}.hero-copy>p.hero-note{font-size:.85rem}.device-shell{width:100%;max-width:370px;transform:none}.device-screen{padding:34px 16px 22px;min-height:550px}.device-brand-logo{width:130px}.chat-heading{flex-wrap:wrap}.chat-bubble{font-size:.85rem;padding:12px}.chat-bubble.user{margin-left:12px}.statement,.products,.workflow,.pricing,.faq{padding-top:55px;padding-bottom:40px}.section-head{gap:12px;margin-bottom:28px}.statement-copy{margin-top:25px}.price-card h3 span{display:block;margin-left:0}.mobile-menu a{font-size:1.6rem}section[id]{scroll-margin-top:108px}}
